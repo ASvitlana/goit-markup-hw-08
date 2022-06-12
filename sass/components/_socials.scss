@@ -1,0 +1,32 @@
+.socials {
+    @extend %centeredFlex;
+    margin-right: -10px;
+    @extend %list;
+}
+
+.socials__item {
+    margin-right: 10px;
+}
+
+.socials__link--theme-light {
+    @extend %socials__link;
+    fill: $icon-color;
+    background-color: $white-color;
+
+    &:hover,
+    &:focus {
+        fill: $white-color;
+        background-color: $blue-color;
+    }
+}
+
+.socials__link--theme-dark {
+    @extend %socials__link;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $white-color;
+
+    &:hover,
+    &:focus {
+        background-color: $blue-color;
+    }
+}

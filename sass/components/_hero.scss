@@ -1,0 +1,37 @@
+.hero {
+    @extend %centeredFlex;
+    text-align: center;
+    background: $dark-blue-color;
+    background-color: rgba(196, 196, 196, 1);
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/cap-img.jpg);
+}
+
+
+
+.hero__tiitle {
+    color: $white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: $typical-item-margin;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero__buttton {
+    margin-left: auto;
+    margin-right: auto;
+}

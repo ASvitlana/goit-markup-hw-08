@@ -1,0 +1,21 @@
+.logo {
+    display: flex;
+    font-family: $accent-font-family;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    color: $blue-color;
+    
+    &--margin {
+            margin-right: 93px;
+        }
+    
+    &--theme-dark {
+        color: rgba(0, 0, 0, 1);
+    }
+    &--theme-light {
+        color: $white-color;
+    }
+}
+

@@ -1,0 +1,48 @@
+.team {
+    background-color: rgba(245, 244, 250, 1);
+}
+
+.team__list {
+    display: flex;
+    // gap: 30px;
+    margin: $typical-list-margin;
+    @extend %list;
+}
+
+.team__item {
+    flex-basis: calc( 100% / 4 - $typical-item-margin);
+    margin-right: $typical-item-margin;
+    background-color: $white-color;
+}
+
+.team__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.team__memo {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team__meta {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team__text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.team__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
