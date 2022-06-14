@@ -1,11 +1,24 @@
 .filters {
-    @extend %centeredFlex;
-    margin: 0 -8px 50px 0;
     @extend %list;
+    @extend %centeredFlex;
+    margin: 0;
+    
+    @media screen and(max-width: $tablet) {
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-top: -15px;
+    }
+
+    @media screen and(min-width: $decktop) {
+        margin-bottom: 50px;
+    }
 }
 
 .filters__item {
     margin-right: 8px;
+    @media screen and(max-width: $tablet){
+    margin-top: 15px;
+    }
 }
 
 .filters__button {
@@ -33,18 +46,40 @@
 
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
     @extend %list;
+    margin: 0;
+    
+    @media screen and(max-width: $tablet) {
+            margin: 40px 0 0 calc(-1 * $typical-item-margin);
+        }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+
+    @media screen and(min-width: $decktop) {
+        margin: calc(-1 * $typical-item-margin) 0 0 calc(-1 * $typical-item-margin);
+    }
     // gap: 30px;
-    margin: calc(-1 * $typical-item-margin) 0 0 calc(-1 * $typical-item-margin);
 }
 
 .projects__item {
-    flex-basis: calc(100% / 3 - $typical-item-margin);
     margin-left: $typical-item-margin;
     margin-top: $typical-item-margin;
     border: 1px solid rgba(238, 238, 238, 1);
+
+    
+
+    @media screen and(min-width: $tablet) {
+        flex-basis: calc(100% / 2 - $typical-item-margin);
+    }
+    
+    @media screen and(min-width: $decktop) {
+        flex-basis: calc(100% / 3 - $typical-item-margin);
+    }
+    
 }
 
 .projects__image {

@@ -7,16 +7,32 @@ body {
 }
 
 .container {
-    width: 1200px;
+    // width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    // outline: 2px solid tomato;
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $decktop) {
+        width: $decktop;
+    }
+    outline: 2px solid tomato;
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: $decktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 h1,
@@ -39,5 +55,8 @@ img {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px;
+    
+    @media screen and (min-width: $decktop) {
+        margin-bottom: 50px;
+    }
 }
