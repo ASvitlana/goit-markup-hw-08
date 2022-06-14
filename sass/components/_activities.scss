@@ -1,6 +1,9 @@
 .section.activities {
     padding-top: 0px;
     
+    @media screen and(max-width: $decktop) {
+        display: none;
+    }
 }
 
 .activities__list {

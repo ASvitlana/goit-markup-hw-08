@@ -90,13 +90,14 @@ img {
 .section-title {
   color: rgb(33, 33, 33);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
   text-align: center;
+  font-size: 28px;
+  line-height: 1.17;
 }
 @media screen and (min-width: 1200px) {
   .section-title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -106,10 +107,16 @@ img {
   display: flex;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
   color: rgb(33, 150, 243);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo--margin {
   margin-right: 93px;
@@ -384,6 +391,11 @@ img {
 .section.activities {
   padding-top: 0px;
 }
+@media screen and (max-width: 1200px) {
+  .section.activities {
+    display: none;
+  }
+}
 
 .activities__list {
   display: -webkit-box;
@@ -548,15 +560,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    margin-right: 30px;
-    margin-top: 30px;
     -ms-flex-preferred-size: calc(33.3333333333% - 30px);
         flex-basis: calc(33.3333333333% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    margin-right: 30px;
     margin-top: 0;
   }
 }

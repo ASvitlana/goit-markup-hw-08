@@ -2,11 +2,16 @@
     display: flex;
     font-family: $accent-font-family;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     text-decoration: none;
     color: $blue-color;
     
+    @media screen and (min-width: $decktop) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+
     &--margin {
             margin-right: 93px;
         }

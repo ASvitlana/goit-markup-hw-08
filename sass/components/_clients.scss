@@ -17,13 +17,10 @@
     flex-basis: calc(100% / 2 - $typical-item-margin);
 
     @media screen and(min-width: $tablet) {
-        margin-right: $typical-item-margin;
-        margin-top: $typical-item-margin;
         flex-basis: calc(100% / 3 - $typical-item-margin);
     }
     
     @media screen and(min-width: $decktop) {
-        margin-right: $typical-item-margin;
         margin-top: 0;
     }
     
