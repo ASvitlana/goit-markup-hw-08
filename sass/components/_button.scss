@@ -19,4 +19,15 @@
     &:focus {
         background-color: rgba(24, 140, 232, 1);
     }
+
+    @media screen and (max-width: 767px) {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: inline-flex;
+        align-items: center;
+        // justify-content: center;
+    }
 }

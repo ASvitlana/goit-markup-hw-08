@@ -7,16 +7,27 @@
     text-decoration: none;
     color: $blue-color;
     
-    // @media screen and (max-width: $mobile) {
-    //      padding: 16px 0;
-    // }
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+        margin-bottom: 0px;
+    }
     
     @media screen and (min-width: $decktop) {
         font-size: 26px;
         line-height: 1.19;
+        justify-content: left
     }
 
     &--margin {    
+        @media screen and (max-width: 767px) {
+            margin-right: 88px;
+        }
+
         @media screen and (min-width: $tablet) {
             margin-right: 93px;
         }
