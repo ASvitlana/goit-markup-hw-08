@@ -7,18 +7,12 @@
         background-color: rgba(0, 0, 0, 0.2);
         opacity: 1;
         visibility: visible;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity 3250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 3250ms cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 99999;
+        overflow-y: scroll;
 
     @media screen and (max-width: 479px) {
-        overflow-y: scroll;
-    }
-
-    @media screen and (max-width: 767px) {
-        overflow-y: scroll;
-    }
-    
-    @media screen and (min-width: $tablet) {
-        overflow-y: scroll;
+        padding: 93px 15px;
     }
     
     @media screen and (min-width: $decktop) {    
@@ -47,30 +41,35 @@
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    position: relative;
     padding: 40px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     opacity: 1;
+    transform: scale(1);
     background-color: $white-color;
-    transition: transform 2250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: scale 2250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     
-    @media screen and (max-width: 479px) {
-        min-width: calc(100% - 30px);
-    }
+    // @media screen and (max-width: 479px) {
+    //     // min-width: calc(100% - 30px);
+    //     // width: 100%;
+    // }
 
     @media screen and (min-width: $mobile) and (max-width: 767px) {
         width: 450px;
-            // min-height: 609px;
+        
+    }
+
+    @media screen and (min-width: $mobile) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
     }
     
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         width: 450px;
-            // min-height: 609px;
     }
     
     @media screen and (min-width: $decktop) {
