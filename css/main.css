@@ -47,7 +47,8 @@ body.modal-open {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   outline: 2px solid tomato;
 }
 @media screen and (min-width: 480px) {
@@ -160,8 +161,10 @@ img {
   color: rgb(255, 255, 255);
 }
 
-.page-header {
-  border-bottom: 1px solid rgb(236, 236, 236);
+@media screen and (min-width: 768px) {
+  .page-header {
+    border-bottom: 1px solid rgb(236, 236, 236);
+  }
 }
 
 .page-header__container {
@@ -374,7 +377,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: 84px;
+    margin-left: 75px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -456,7 +459,7 @@ img {
     fill: currentColor;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .connect__icon {
     margin-right: 10px;
   }
@@ -646,7 +649,7 @@ img {
 }
 
 .features__icon {
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: rgb(245, 244, 250);
   border-radius: 4px;
@@ -850,7 +853,7 @@ img {
 }
 
 .clients__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
@@ -1198,7 +1201,6 @@ img {
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.03em;
     cursor: pointer;
-    margin-right: 12px;
     margin-bottom: 20px;
     -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1222,7 +1224,6 @@ img {
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.03em;
     cursor: pointer;
-    margin-right: 12px;
     margin-bottom: 20px;
     -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1322,6 +1323,7 @@ img {
 
 .modal {
   position: relative;
+  width: 100%;
   padding: 40px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1336,6 +1338,7 @@ img {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .modal {
     width: 450px;
+    outline: none;
   }
 }
 @media screen and (min-width: 480px) {

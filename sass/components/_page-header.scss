@@ -1,6 +1,8 @@
 .page-header {
-    
-    border-bottom: 1px solid rgba(236, 236, 236, 1);
+//    border-bottom: none;
+    @media screen and (min-width: $tablet) {
+        border-bottom: 1px solid rgba(236, 236, 236, 1);
+    }
 }
 
 .page-header__container {
@@ -192,7 +194,7 @@
     @media screen and (min-width: $tablet) {
         flex-direction: column;
         justify-content: center;
-        margin-left: 84px;
+        margin-left: 75px;
     }
 
     @media screen and (min-width: $decktop) {
@@ -202,6 +204,7 @@
 }
 
 .connect__link {
+        // display: inline-block;
         text-decoration: none;
         font-weight: 500;
         letter-spacing: 0.02em;
@@ -224,6 +227,11 @@
             margin-bottom: 32px;
         }
     }
+
+    // @media screen and (min-width: $tablet) {
+    //     justify-content: center;
+    //     align-items: center;
+    // }
 
     @media screen and (min-width: $tablet) {
         font-size: 12px;
@@ -263,9 +271,31 @@
         fill: currentColor;
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $decktop) {
         margin-right: 10px;
+        
+        // &--mail {
+        //     width: 14px;
+        //     height: 10px;
+        // }
+        
+        // &--tel {
+        //     width: 10px;
+        //     height: 14px;
+        // }
     }
+
+    // @media screen and (min-width: $decktop) {
+    //     &--mail {
+    //         width: 16px;
+    //         height: 12px;
+    //     }
+
+    //     &--tel {
+    //         width: 10px;
+    //         height: 16px;
+    //     }
+    // }
 }
 
 .header-socials {
