@@ -143,19 +143,22 @@
                 </h2>
                 <ul class="activities__list">
                     <li class="activities__item">
-                        <img src="./images/we_do/box1.jpg" alt="занятие1" />
+                        <img srcset="./images/we_do/decktop-soft.jpg 1x, /images/we_do/decktop-soft@2x.jpg 2x"
+                        src="./images/we_do/decktop-soft.jpg" alt="десктопные приложения" />
                         <p class="activities__label">
                             Десктопные приложения
                         </p>
                     </li>
                     <li class="activities__item">
-                        <img src="./images/we_do/box2.jpg" alt="занятие2" />
+                        <img srcset="./images/we_do/mobile-soft.jpg 1x, ./images/we_do/mobile-soft@2x.jpg 2x"
+                        src="./images/we_do/mobile-soft.jpg" alt="мобильные приложения" />
                         <p class="activities__label">
                             Мобильные приложения
                         </p>
                     </li>
                     <li class="activities__item">
-                        <img src="./images/we_do/box3.jpg" alt="занятие3" />
+                        <img srcset="./images/we_do/tablet-soft.jpg 1x, ./images/we_do/tablet-soft@2x.jpg 2x"
+                        src="./images/we_do/tablet-soft.jpg" alt="Дизайнерские решения" />
                         <p class="activities__label">
                             Дизайнерские решения
                         </p>
@@ -171,7 +174,15 @@
                 </h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img class="team__img" src="./images/our_team/ihor.jpg" alt="Игорь Демьяненко" />
+                        <picture>
+                            <source srcset="./images/our_team/Ihor-mobile.jpg 450w, ./images/our_team/Ihor-mobile@2x.jpg 950w"
+                                media="(max-width: 767px)" sizes="(max-width: 767px)" 450px, 100vw type="image/jpeg">
+                            <source srcset="./images/our_team/Ihor-tablet.jpg 354w, ./images/our_team/Ihor-tablet@2x.jpg 708w" 
+                                media="(min-width: tablet) and (max-width: 1199px)" sizes="(min-width: $tablet)" 354px, 50vw type="image/jpeg">
+                            <source srcset="./images/our_team/Ihor-decktop.jpg 270w, ./images/our_team/Ihor-decktop@2x.jpg 540w"  
+                            media="(min-width: $decktop)" sizes="(min-width: $decktop)" 270px, 25vw>
+                            <img class="team__img" src="./images/our_team/ihor.jpg" alt="Игорь Демьяненко" />
+                        </picture>
                         <div class="team__meta">
                             <h3 class="team__memo">Игорь Демьяненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -208,7 +219,16 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/our_team/olha.jpg" alt="Ольго Репина" />
+                        <picture>
+                            <source srcset="./images/our_team/Olha-mobile.jpg 450w, ./images/our_team/Olha-mobile@2x.jpg 950w"
+                                media="(max-width: 767px)" sizes="(max-width: 767px)" 450px, 100vw type="image/jpeg">
+                            <source srcset="./images/our_team/Olha-tablet.jpg 354w, ./images/our_team/Olha-tablet@2x.jpg 708w"
+                                media="(min-width: tablet) and (max-width: 1199px)" sizes="(min-width: $tablet)" 354px, 50vw type="image/jpeg">
+                            <source srcset="./images/our_team/Olha-decktop.jpg 270w, ./images/our_team/Olha-decktop@2x.jpg 540w"
+                                media="(min-width: $decktop)" sizes="(min-width: $decktop)" 270px, 25vw>
+                            <img class="team__img" src="./images/our_team/olha.jpg" alt="Ольго Репина" />
+                        </picture>
+                        
                         <div class="team__meta">
                             <h3 class="team__memo">Ольга Репина</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -245,7 +265,15 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/our_team/nikolay.jpg" alt="Николай Тарасов" />
+                        <picture>
+                            <source srcset="./images/our_team/Nikolai-mobile.jpg 450w, ./images/our_team/Nikolai-mobile@2x.jpg 950w"
+                                media="(max-width: 479px)" sizes="(max-width: 479px)" 450px, 100vw type="image/jpeg">
+                            <source srcset="./images/our_team/Nikolai-tablet.jpg 354w, ./images/our_team/Nikolai-tablet@2x.jpg 708w"
+                                media="(min-width: $mobile) and (max-width: 779px)" sizes="(max-width: $tablet)" 354px, 50vw type="image/jpeg">
+                            <source srcset="./images/our_team/Nikolai-decktop.jpg 270w, ./images/our_team/Nikolai-decktop@2x.jpg 540w"
+                                media="(min-width: $tablet)" sizes="(min-width: $tablet)" 270px, 25vw>
+                            <img class="team__img" src="./images/our_team/nikolay.jpg" alt="Николай Тарасов" /> 
+                        </picture>
                         <div class="team__meta">
                             <h3 class="team__memo">Николай Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -282,7 +310,14 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/our_team/mihail.jpg" alt="Михаил Ермаков" />
+                        <picture>
+                            <source srcset="./images/our_team/Mihail-mobile.jpg 450w, ./images/our_team/Mihail-mobile@2x.jpg 950w"
+                                media="(max-width: 479px)" sizes="(max-width: 479px)" 450px, 100vw type="image/jpeg">
+                            <source srcset="./images/our_team/Mihail-tablet.jpg 354w, ./images/our_team/Mihail-tablet@2x.jpg 708w"
+                                media="(min-width: $mobile) and (max-width: 779px)" sizes="(max-width: $tablet)" 354px, 50vw type="image/jpeg">
+                            <source srcset="./images/our_team/Mihail-decktop.jpg 270w, ./images/our_team/Mihail-decktop@2x.jpg 540w">
+                            <img class="team__img" src="./images/our_team/mihail.jpg" alt="Михаил Ермаков" />
+                        </picture>
                         <div class="team__meta">
                             <h3 class="team__memo">Михаил Ермаков</h3>
                             <p class="team__text">UI Designer</p>

@@ -3,7 +3,7 @@
     text-align: center;
     background: $dark-blue-color;
     background-color: rgba(196, 196, 196, 1);
-    max-width: 1600px;
+    max-width: 480px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -11,9 +11,57 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/cap-img.jpg);
-    
-    @media screen and (min-width: $decktop) {
+            url(../images/hero/hero-mobile.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero-mobile@2x.jpg);
+    }
+}
+
+
+@media screen and (min-width: $mobile) and (max-width: 767px)  {
+    .hero {
+        max-width: 767px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero-tablet.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/hero/hero-tablet@2x.jpg);
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .hero {
+        max-width: 1600px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../images/hero/hero-decktop.jpg);
+    }
+}
+@media screen and (min-width: $tablet) and (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../images/hero/hero-decktop@2x.jpg);
+    }
+}
+
+@media screen and (min-width: $decktop) {
+    .hero {
         height: 600px;
     }
 }
