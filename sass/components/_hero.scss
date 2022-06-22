@@ -1,5 +1,8 @@
 .hero {
-    @extend %centeredFlex;
+    // @extend %centeredFlex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     background: $dark-blue-color;
     background-color: rgba(196, 196, 196, 1);
@@ -25,7 +28,7 @@
 }
 
 
-@media screen and (min-width: $mobile) and (max-width: 767px)  {
+@media screen and (min-width: 481px) and (max-width: $tablet)  {
     .hero {
         max-width: 767px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -43,7 +46,7 @@
     }
 }
 
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: 769px) {
     .hero {
         max-width: 1600px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
