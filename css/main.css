@@ -385,6 +385,9 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-left: 75px;
   }
 }
@@ -421,13 +424,17 @@ img {
 }
 @media screen and (min-width: 768px) {
   .connect__link {
-    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 12px;
+    margin: 0;
   }
   .connect__link + .connect__link {
     margin-top: 10px;
