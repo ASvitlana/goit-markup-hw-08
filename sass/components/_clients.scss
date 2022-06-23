@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     margin: 0;
     cursor: pointer;
-    margin-right: calc(-1 * $typical-item-margin);
+    margin-left: calc(-1 * $typical-item-margin);
     @extend %list;
 
     @media screen and(min-width: $decktop) {
@@ -12,7 +12,7 @@
 }
 
 .clients__item {
-    margin-right: $typical-item-margin;
+    margin-left: $typical-item-margin;
     margin-top: $typical-item-margin;
     flex-basis: calc(100% / 2 - $typical-item-margin);
 

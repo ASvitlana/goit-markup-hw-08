@@ -8,14 +8,14 @@
     }
 
     @media screen and (min-width: $tablet) {
-        margin-top: calc(-1 * $typical-item-margin);
-        margin-right: calc(-1 * $typical-item-margin);
+        // margin-top: calc(-1 * $typical-item-margin);
+        margin-left: calc(-1 * $typical-item-margin);
         margin-bottom: 0;
     }
     
     @media screen and (min-width: $decktop) {
         flex-wrap: nowrap;
-        margin: $typical-list-margin;
+        margin: 0 0 0 calc(-1 * $typical-item-margin);
     }
 }
 
@@ -25,13 +25,13 @@
 
     @media screen and (min-width: $tablet) {
         flex-basis: calc(100% / 2 - $typical-item-margin);
-        margin-right: $typical-item-margin;
+        margin-left: $typical-item-margin;
         margin-top: $typical-item-margin;
     }
 
     @media screen and (min-width: $decktop) {
         flex-basis: calc(100% / 4 - $typical-item-margin);
-        margin-right: $typical-item-margin;
+        margin-left: $typical-item-margin;
         margin-top: 0;
     }
 
@@ -52,9 +52,6 @@
         text-align: left;
     }
 
-    // @media screen and (max-width: $tablet) {
-    //     text-align: left;
-    // }
 }
 
 

@@ -9,7 +9,7 @@
     margin: 0;
     
     @media screen and(min-width: $tablet) {
-        margin-right: calc(-1 * $typical-item-margin);
+        margin-left: calc(-1 * $typical-item-margin);
     }
 
     @media screen and (min-width: $decktop) {
@@ -25,12 +25,12 @@
     
     @media screen and (min-width: $tablet) {
         flex-basis: calc(100% / 2 - $typical-item-margin);
-        margin-right: $typical-item-margin;
+        margin-left: $typical-item-margin;
     }
     
     @media screen and (min-width: $decktop) {
         flex-basis: calc(100% / 4 - $typical-item-margin);
-        margin-right: $typical-item-margin;
+        margin-left: $typical-item-margin;
         margin-top: 0;
     }
 }
