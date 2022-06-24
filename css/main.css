@@ -1816,10 +1816,42 @@ img {
 }
 
 .projects__text {
-  font-size: 18px;
-  line-height: 1.56;
   color: rgb(255, 255, 255);
-  padding: 64px 24px;
+}
+@media screen and (max-width: 320px) {
+  .projects__text {
+    font-size: 14px;
+    line-height: 1.45;
+    padding: 24px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .projects__text {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 24px 24px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .projects__text {
+    font-size: 18px;
+    line-height: 1.56;
+    padding: 77px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects__text {
+    font-size: 18px;
+    line-height: 1.56;
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__text {
+    font-size: 18px;
+    line-height: 1.56;
+    padding: 64px 24px;
+  }
 }
 
 .projects__item {
